@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dashboard {
+    background: paleturquoise;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0  10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-order {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-order input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.add-order input[type="number"] {
+    width: 150px;
+}
+
+.add-order button {
+    padding: 10px 15px;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-order button:hover {
+    background: #218838;
+}
+
+#orderList {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#orderList li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: palegoldenrod;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#orderList li span {
+    flex: 2;
+}
+
+.delete-btn {
+    background: #dc3545;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+.total {
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .add-order {
+        flex-direction: column;
+    }
+    .add-order input[type="number"] {
+        width: 100%;
+    }
+}

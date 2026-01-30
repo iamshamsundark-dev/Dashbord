@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <h1>🍽 Restaurant Dashboard</h1>
+
+    <!-- Add Order Section -->
+    <div class="add-order">
+        <input type="text" id="orderName" placeholder="Enter Order Name">
+        <input type="number" id="orderPrice" placeholder="Enter Price" min="1">
+        <button onclick="addOrder()">Add Order</button>
+    </div>
+
+    <!-- Order List -->
+    <ul id="orderList"></ul>
+
+    <!-- Total Bill -->
+    <div class="total">
+        Total Bill: ₹<span id="totalBill">0</span>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
